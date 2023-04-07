@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -41,12 +42,18 @@ dependencies {
     implementation Libs.Android.CoreKtx
     implementation Libs.Android.AppCompat
     implementation Libs.Android.ConstraintLayout
+    implementation Libs.Android.FragmentKtx
+    implementation Libs.Android.LifecycleLivedataKtx
+    implementation Libs.Android.LifecycleViewModelKtx
 
     implementation Libs.Google.Material
-    implementation Libs.Testing.JUnit
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation Libs.Google.Dagger
+    kapt Libs.Google.DaggerCompiler
 
-    androidTestImplementation  Libs.Testing.JUnitExt
+    implementation Libs.Testing.JUnit
+
+    implementation Libs.Stuff.ViewBindingPropertyDelegate
+    implementation Libs.Stuff.ViewBindingPropertyDelegateNR
+
+    androidTestImplementation Libs.Testing.JUnitExt
 }

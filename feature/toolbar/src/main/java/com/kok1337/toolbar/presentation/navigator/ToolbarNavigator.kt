@@ -30,4 +30,9 @@ interface ToolbarNavigator {
      * Открыть фрагмент "Синхронизация"
      */
     fun launchSettingsScreen()
+
+    /**
+     * Установить стартовый фрагмент
+     */
+    fun setupStartFragment()
 }

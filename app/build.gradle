@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -38,13 +39,24 @@ android {
 
 dependencies {
     implementation project(Modules.Core.UI)
-
+    implementation project(Modules.Core.ProvidingDependencies)
     implementation project(Modules.Feature.Toolbar)
+    implementation project(Modules.Feature.TermuxPreparation)
+    implementation project(Modules.Feature.Camera)
+    implementation project(Modules.Feature.Map)
+    implementation project(Modules.Feature.Settings)
+    implementation project(Modules.Feature.WorkTypes)
+    implementation project(Modules.Feature.DatabaseSync)
 
     implementation Libs.Android.CoreKtx
     implementation Libs.Android.AppCompat
+    implementation Libs.Android.FragmentKtx
     implementation Libs.Android.ConstraintLayout
+
     implementation Libs.Google.Material
+    implementation Libs.Google.Dagger
+    kapt Libs.Google.DaggerCompiler
+
     implementation Libs.Testing.JUnit
     androidTestImplementation Libs.Testing.JUnitExt
 }

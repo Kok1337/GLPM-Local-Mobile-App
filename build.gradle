@@ -6,6 +6,8 @@ buildscript {
 
         dagger = '2.44'
         ktorm = '3.6.0'
+        lifecycle_ktx = '2.6.1'
+        viewbindingpropertydelegate = '1.5.6'
 
         Libs = [
                 Android  : [
@@ -13,8 +15,9 @@ buildscript {
                         FragmentKtx          : "androidx.fragment:fragment-ktx:1.5.5",
                         ActivityKtx          : "androidx.activity:activity-ktx:1.6.1",
                         AppCompat            : "androidx.appcompat:appcompat:1.6.0",
-                        LifecycleRuntimeKtx  : "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1",
-                        LifecycleViewModelKtx: "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1",
+                        LifecycleRuntimeKtx  : "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_ktx",
+                        LifecycleViewModelKtx: "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_ktx",
+                        LifecycleLivedataKtx : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_ktx",
                         ConstraintLayout     : "androidx.constraintlayout:constraintlayout:2.1.4",
                         RecyclerView         : "androidx.recyclerview:recyclerview:1.2.1",
                 ],
@@ -31,9 +34,11 @@ buildscript {
                         JUnitExt: "androidx.test.ext:junit:1.1.5"
                 ],
                 Stuff    : [
-                        DelegateAdapter: "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:4.3.2",
-                        Ktorm          : "org.ktorm:ktorm-core:$ktorm",
-                        KtormPostgresql: "org.ktorm:ktorm-support-postgresql:$ktorm",
+                        DelegateAdapter              : "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:4.3.2",
+                        Ktorm                        : "org.ktorm:ktorm-core:$ktorm",
+                        KtormPostgresql              : "org.ktorm:ktorm-support-postgresql:$ktorm",
+                        ViewBindingPropertyDelegate  : "com.github.kirich1409:viewbindingpropertydelegate:$viewbindingpropertydelegate",
+                        ViewBindingPropertyDelegateNR: "com.github.kirich1409:viewbindingpropertydelegate-noreflection:$viewbindingpropertydelegate",
                 ],
         ]
 
@@ -43,7 +48,13 @@ buildscript {
                         ProvidingDependencies: ":core:providing-dependencies"
                 ],
                 Feature: [
-                        Toolbar: ":feature:toolbar",
+                        Toolbar          : ":feature:toolbar",
+                        Camera           : ":feature:camera",
+                        Map              : ":feature:map",
+                        Settings         : ":feature:settings",
+                        TermuxPreparation: ":feature:termux-preparation",
+                        WorkTypes        : ":feature:work-types",
+                        DatabaseSync     : ":feature:database-synchronization",
                 ],
         ]
     }
