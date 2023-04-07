@@ -15,7 +15,13 @@
             <option value="$PROJECT_DIR$/core/providing-dependencies" />
             <option value="$PROJECT_DIR$/core/ui" />
             <option value="$PROJECT_DIR$/feature" />
+            <option value="$PROJECT_DIR$/feature/camera" />
+            <option value="$PROJECT_DIR$/feature/database-synchronization" />
+            <option value="$PROJECT_DIR$/feature/map" />
+            <option value="$PROJECT_DIR$/feature/settings" />
+            <option value="$PROJECT_DIR$/feature/termux-preparation" />
             <option value="$PROJECT_DIR$/feature/toolbar" />
+            <option value="$PROJECT_DIR$/feature/work-types" />
           </set>
         </option>
       </GradleProjectSettings>
