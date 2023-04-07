@@ -14,3 +14,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "GLPM-Local-Mobile-App"
 include ':app'
+include ':core:ui'
+include ':core:providing-dependencies'
+include ':feature:toolbar'

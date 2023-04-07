@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.GlpmLocal.Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/vbg_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textAppearance">@style/WidgetTextAppearance</item>
+    </style>
+
+    <style name="Widget.GlpmLocal.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:background">@drawable/vbg_textview</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textAppearance">@style/WidgetTextAppearance</item>
+    </style>
+
+    <style name="Widget.GlpmLocal.LabelTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/LabelTextAppearance</item>
+    </style>
+
+    <style name="Widget.GlpmLocal.Base.ImageButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:tint">@color/click_icon_tint</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="Widget.GlpmLocal.SquareImageButton" parent="Widget.GlpmLocal.Base.ImageButton">
+        <item name="android:background">@drawable/vbg_button_square</item>
+    </style>
+
+    <style name="Widget.GlpmLocal.CircleImageButton" parent="Widget.GlpmLocal.Base.ImageButton">
+        <item name="android:background">@drawable/vbg_button_circle</item>
+    </style>
+
+    <style name="Widget.GlpmLocal.ModuleIcon" parent="Widget.GlpmLocal.Base.ImageButton">
+        <item name="android:background">@drawable/vbg_module_icon</item>
+    </style>
+
+    <style name="Widget.GlpmLocal.Spinner" parent="Widget.AppCompat.TextView">
+        <item name="android:background">@drawable/vbg_spinner</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">48dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textAppearance">@style/WidgetTextAppearance</item>
+    </style>
+
+    <style name="Widget.GlpmLocal.Title" parent="Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@style/TitleTextAppearance</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Widget.GlpmLocal.SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:background">@drawable/vbg_search_view</item>
+        <item name="android:editTextColor">@color/text</item>
+        <item name="android:iconifiedByDefault">false</item>
+        <item name="android:queryBackground">@drawable/vbg_invisible</item>
+        <item name="android:textAppearance">@style/WidgetTextAppearance</item>
+    </style>
+
+    <style name="ColumnSeparator">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">8dp</item>
+    </style>
+
+    <style name="RowSeparator">
+        <item name="android:layout_height">8dp</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="Separator">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Widget.GlpmLocal.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/vbg_edit_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textAppearance">@style/WidgetTextAppearance</item>
+    </style>
+
+    <style name="Widget.GlpmLocal.HorizontalProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/vbg_progress_bar</item>
+        <item name="android:progress">0</item>
+        <item name="android:max">100</item>
+    </style>
+
+    <style name="ToolbarIcon">
+        <item name="android:layout_height">@dimen/toolbar_icon_size</item>
+        <item name="android:layout_width">@dimen/toolbar_icon_size</item>
+        <item name="android:background">@drawable/vbg_toolbar_item</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:tint">@color/toolbar_icon_tint</item>
+        <item name="android:checkable">true</item>
+    </style>
+
+    <style name="ItemSpinnerLayout">
+        <item name="android:layout_marginTop">@dimen/item_vertical_half_padding</item>
+        <item name="android:layout_marginBottom">@dimen/item_vertical_half_padding</item>
+    </style>
+
+    <style name="Widget.GlpmLocal.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">?android:attr/listChoiceIndicatorMultiple</item>
+        <item name="android:button">@null</item>
+        <item name="android:backgroundTint">@color/checkbox_tint</item>
+        <item name="android:padding">0dp</item>
+    </style>
+</resources>

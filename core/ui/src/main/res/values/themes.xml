@@ -1,0 +1,26 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.V23.Theme.GlpmLocal" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:checkboxStyle">@style/Widget.GlpmLocal.CheckBox</item>
+        <item name="android:buttonStyle">@style/Widget.GlpmLocal.Button</item>
+        <item name="android:textViewStyle">@style/Widget.GlpmLocal.LabelTextView</item>
+        <item name="android:editTextStyle">@style/Widget.GlpmLocal.EditText</item>
+        <item name="android:searchViewStyle">@style/Widget.GlpmLocal.SearchView</item>
+    </style>
+
+    <style name="Base.Theme.GlpmLocal" parent="Base.V23.Theme.GlpmLocal" />
+
+    <style name="Theme.GlpmLocal" parent="Base.Theme.GlpmLocal"/>
+</resources>

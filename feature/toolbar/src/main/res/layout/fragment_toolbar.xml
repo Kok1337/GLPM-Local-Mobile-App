@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fragment.ToolbarFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/toolbar_padding"
+            android:paddingBottom="@dimen/toolbar_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.kok1337.toolbar.presentation.view.ToolbarIcon
+                android:id="@+id/toolbar_map"
+                style="@style/ToolbarIcon"
+                android:src="@drawable/ic_map"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/toolbar_camera"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <com.kok1337.toolbar.presentation.view.ToolbarIcon
+                android:id="@+id/toolbar_camera"
+                style="@style/ToolbarIcon"
+                android:src="@drawable/ic_camera"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/toolbar_work_types"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@id/toolbar_map"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.kok1337.toolbar.presentation.view.ToolbarIcon
+                android:id="@+id/toolbar_work_types"
+                style="@style/ToolbarIcon"
+                android:src="@drawable/ic_work_types"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/toolbar_edit"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/toolbar_camera"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.kok1337.toolbar.presentation.view.ToolbarIcon
+                android:id="@+id/toolbar_edit"
+                style="@style/ToolbarIcon"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/toolbar_save"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/toolbar_work_types"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.kok1337.toolbar.presentation.view.ToolbarIcon
+                android:id="@+id/toolbar_save"
+                style="@style/ToolbarIcon"
+                android:src="@drawable/ic_save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/toolbar_synchronization"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/toolbar_edit"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.kok1337.toolbar.presentation.view.ToolbarIcon
+                android:id="@+id/toolbar_synchronization"
+                style="@style/ToolbarIcon"
+                android:src="@drawable/ic_sync"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/toolbar_settings"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/toolbar_save"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.kok1337.toolbar.presentation.view.ToolbarIcon
+                android:id="@+id/toolbar_settings"
+                style="@style/ToolbarIcon"
+                android:src="@drawable/ic_settings"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/toolbar_synchronization"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/toolbar_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+            android:name="com.kok1337.feature_toolbar.presentation.fragment.ToolbarFragment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WidgetTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="LabelTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TitleTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+</resources>

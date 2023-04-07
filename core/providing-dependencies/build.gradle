@@ -1,20 +1,18 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
 
 android {
-    namespace 'com.kok1337.glpm_local_mobile_app'
+    namespace 'com.kok1337.providing_dependencies'
     compileSdk targetAndroidSdk
 
     defaultConfig {
-        applicationId "com.kok1337.glpm_local_mobile_app"
         minSdk minAndroidSdk
         targetSdk targetAndroidSdk
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -30,21 +28,15 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        viewBinding true
-        dataBinding true
-    }
 }
 
 dependencies {
-    implementation project(Modules.Core.UI)
-
-    implementation project(Modules.Feature.Toolbar)
-
     implementation Libs.Android.CoreKtx
     implementation Libs.Android.AppCompat
-    implementation Libs.Android.ConstraintLayout
+
     implementation Libs.Google.Material
+    implementation Libs.Google.Dagger
+
     implementation Libs.Testing.JUnit
-    androidTestImplementation Libs.Testing.JUnitExt
+    androidTestImplementation  Libs.Testing.JUnitExt
 }
