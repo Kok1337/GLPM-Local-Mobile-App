@@ -1,21 +1,19 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
 }
 
 android {
-    namespace 'com.kok1337.glpm_local_mobile_app'
+    namespace 'com.kok1337.main_activity'
     compileSdk targetAndroidSdk
 
     defaultConfig {
-        applicationId "com.kok1337.glpm_local_mobile_app"
         minSdk minAndroidSdk
         targetSdk targetAndroidSdk
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -40,10 +38,6 @@ android {
 dependencies {
     implementation project(Modules.Core.UI)
     implementation project(Modules.Core.ProvidingDependencies)
-
-    implementation project(Modules.Activity.Main)
-
-    implementation project(Modules.Feature.Toolbar)
 
     implementation Libs.Android.CoreKtx
     implementation Libs.Android.AppCompat

@@ -12,6 +12,37 @@ interface HasDependencies {
     val depsMap: DepsMap
 }
 
+inline fun <reified D : Dependencies> Activity.findDependencies(): D {
+    return findDependenciesByClass(D::class.java)
+}
+
+@Suppress("UNCHECKED_CAST")
+fun <D : Dependencies> Activity.findDependenciesByClass(clazz: Class<D>): D {
+    return parents.firstNotNullOfOrNull { it.depsMap[clazz] } as D?
+        ?: throw IllegalStateException("No Dependencies $clazz in ${allParents.joinToString()}")
+}
+
+private val Activity.parents: Iterable<HasDependencies>
+    get() = allParents.mapNotNull { it as? HasDependencies }
+
+private val Activity.allParents: Iterable<Any>
+    get() = object : Iterable<Any> {
+        override fun iterator() = object : Iterator<Any> {
+            private var parentApplication: Application? = application
+
+            override fun hasNext() = parentApplication != null
+
+            override fun next(): Any {
+                parentApplication?.let { parent ->
+                    parentApplication = null
+                    return parent
+                }
+
+                throw NoSuchElementException()
+            }
+        }
+    }
+
 inline fun <reified D : Dependencies> Fragment.findDependencies(): D {
     return findDependenciesByClass(D::class.java)
 }

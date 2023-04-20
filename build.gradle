@@ -38,11 +38,14 @@ buildscript {
         ]
 
         Modules = [
-                Core   : [
+                Activity: [
+                        Main: ":main-activity",
+                ],
+                Core    : [
                         UI                   : ":core:ui",
                         ProvidingDependencies: ":core:providing-dependencies"
                 ],
-                Feature: [
+                Feature : [
                         Toolbar: ":feature:toolbar",
                 ],
         ]

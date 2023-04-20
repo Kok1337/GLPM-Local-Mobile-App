@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".presentation.activity.MainActivity">
+    tools:context="com.kok1337.main_activity.presentation.activity.MainActivity">
     <FrameLayout
         android:id="@+id/main_activity_container"
         android:layout_width="match_parent"
