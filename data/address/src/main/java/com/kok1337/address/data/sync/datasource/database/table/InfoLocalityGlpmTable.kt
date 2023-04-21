@@ -1,6 +1,6 @@
-package com.kok1337.address.data.datasource.database.table
+package com.kok1337.address.data.sync.datasource.database.table
 
-import com.kok1337.address.data.datasource.database.entity.InfoLocalityGlpmEntity
+import com.kok1337.address.data.sync.datasource.database.entity.InfoLocalityGlpmEntity
 import com.kok1337.sync.data.datasource.database.table.BaseSyncTableKtormUuid
 import org.ktorm.schema.int
 import org.ktorm.schema.text

@@ -1,4 +1,4 @@
-package com.kok1337.address.data.datasource.database.entity
+package com.kok1337.address.data.sync.datasource.database.entity
 
 import com.kok1337.sync.data.datasource.database.entity.BaseSyncEntityKtormUuid
 import org.ktorm.entity.Entity

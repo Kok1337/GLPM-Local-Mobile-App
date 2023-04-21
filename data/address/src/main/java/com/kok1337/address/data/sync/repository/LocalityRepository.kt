@@ -1,10 +1,11 @@
-package com.kok1337.address.data.repository
+package com.kok1337.address.data.sync.repository
 
-import com.kok1337.address.data.datasource.database.entity.InfoLocalityGlpmEntity
-import com.kok1337.address.data.model.LocalityApiModel
+import com.kok1337.address.data.sync.datasource.database.entity.InfoLocalityGlpmEntity
+import com.kok1337.address.data.sync.model.LocalityApiModel
 import com.kok1337.sync.data.repository.BaseSyncDataRepository
 import java.util.*
 
+/*
 class LocalityRepository : BaseSyncDataRepository<UUID, LocalityApiModel, InfoLocalityGlpmEntity>(
 
 ) {
@@ -15,4 +16,4 @@ class LocalityRepository : BaseSyncDataRepository<UUID, LocalityApiModel, InfoLo
     override suspend fun findAllEntities(): Iterable<InfoLocalityGlpmEntity> {
         TODO("Not yet implemented")
     }
-}
+}*/

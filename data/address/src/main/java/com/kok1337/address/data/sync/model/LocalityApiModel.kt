@@ -1,4 +1,4 @@
-package com.kok1337.address.data.model
+package com.kok1337.address.data.sync.model
 
 import com.kok1337.sync.data.model.BaseSyncApiModel
 import java.util.*

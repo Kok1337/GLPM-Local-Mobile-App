@@ -1,7 +1,7 @@
-package com.kok1337.address.data.datasource.database.dao
+package com.kok1337.address.data.sync.datasource.database.dao
 
-import com.kok1337.address.data.datasource.database.entity.InfoLocalityGlpmEntity
-import com.kok1337.address.data.datasource.database.table.InfoLocalityGlpmTable
+import com.kok1337.address.data.sync.datasource.database.entity.InfoLocalityGlpmEntity
+import com.kok1337.address.data.sync.datasource.database.table.InfoLocalityGlpmTable
 import com.kok1337.sync.data.datasource.database.dao.BaseSyncDaoKtormUuid
 import org.ktorm.database.Database
 import org.ktorm.dsl.AssignmentsBuilder

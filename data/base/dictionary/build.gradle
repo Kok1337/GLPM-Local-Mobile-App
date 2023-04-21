@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.kok1337.address'
+    namespace 'com.kok1337.dictionary'
     compileSdk targetAndroidSdk
 
     defaultConfig {
@@ -31,9 +31,6 @@ android {
 }
 
 dependencies {
-    implementation project(Modules.Data.Base.Sync)
-    implementation project(Modules.Data.Base.Dictionary)
-
     implementation Libs.Android.CoreKtx
 
     implementation Libs.JetBrains.CoroutinesCore

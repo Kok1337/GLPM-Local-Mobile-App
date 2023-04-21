@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/data" />
             <option value="$PROJECT_DIR$/data/address" />
             <option value="$PROJECT_DIR$/data/base" />
+            <option value="$PROJECT_DIR$/data/base/dictionary" />
             <option value="$PROJECT_DIR$/data/base/sync" />
             <option value="$PROJECT_DIR$/feature" />
             <option value="$PROJECT_DIR$/feature/camera" />

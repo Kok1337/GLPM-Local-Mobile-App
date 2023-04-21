@@ -50,7 +50,8 @@ buildscript {
                 ],
                 Data    : [
                         Base: [
-                                Sync: ":data:base:sync",
+                                Sync      : ":data:base:sync",
+                                Dictionary: ":data:base:dictionary",
                         ],
                 ],
         ]
